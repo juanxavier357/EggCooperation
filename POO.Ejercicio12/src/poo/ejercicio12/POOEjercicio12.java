@@ -5,6 +5,9 @@
  */
 package poo.ejercicio12;
 
+import Entidad.Persona;
+import Service.PersonaService;
+
 /**
 12. Implemente la clase Persona. Una persona tiene un nombre y una fecha de nacimiento 
 (Tipo Date), constructor vacío, constructor parametrizado, get y set. Y los siguientes 
@@ -30,6 +33,10 @@ public class POOEjercicio12 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        PersonaService ps = new PersonaService();
+        Persona persona = ps.crearPersona();
+        
+        ps.menorEdad();
+        ps.mostrarPersona();   
     }
-    
 }
